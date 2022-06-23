@@ -83,6 +83,30 @@ body {
   background-color: #c69963;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1; }
+  .sidebar__bar {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    height: 2px;
+    background: white;
+    position: relative;
+    top: 4rem; }
+    .sidebar__bar::before {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 100%;
+      background: white;
+      position: absolute;
+      top: -1rem; }
+    .sidebar__bar::after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 100%;
+      background: white;
+      position: absolute;
+      top: 1rem; }
 
 .header {
   background-color: #101d2c;
