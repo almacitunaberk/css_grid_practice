@@ -46,6 +46,14 @@ body {
 .mb-huge {
   margin-bottom: 8rem; }
 
+.cta {
+  background: #c69963;
+  border: none;
+  outline: none;
+  padding: 1.5rem 3rem;
+  color: white;
+  text-transform: uppercase; }
+
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
@@ -143,8 +151,64 @@ body {
   margin-bottom: 4rem; }
 
 .homes {
-  background-color: #101d2c;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  margin: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem; }
+
+.home {
+  background-color: #f9f7f6;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  grid-row-gap: 3.5rem; }
+  .home__image {
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    z-index: 1; }
+  .home__icon {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    height: 3rem;
+    width: 3rem;
+    fill: #c69963;
+    justify-self: end;
+    margin: 1rem;
+    z-index: 2; }
+  .home__name {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    background: #101d2c;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 1.25rem;
+    width: 80%;
+    justify-self: center;
+    align-self: flex-end;
+    transform: translateY(50%);
+    z-index: 3; }
+  .home__location, .home__rooms {
+    margin-top: 2rem; }
+  .home__location, .home__rooms, .home__area, .home__price {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    justify-self: start;
+    margin-left: 4rem; }
+    .home__location svg, .home__rooms svg, .home__area svg, .home__price svg {
+      fill: #c69963;
+      height: 2rem;
+      width: 2rem;
+      margin-right: 1rem; }
+    .home__location p, .home__rooms p, .home__area p, .home__price p {
+      font-size: 1.2rem; }
+  .home__button {
+    grid-column: 1 / -1; }
 
 .gallery {
   background-color: #54483a;

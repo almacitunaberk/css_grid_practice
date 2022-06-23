@@ -77,3 +77,12 @@ body {
 .mb-huge {
   margin-bottom: 8rem;
 }
+
+.cta {
+  background: $color-primary;
+  border: none;
+  outline: none;
+  padding: 1.5rem 3rem;
+  color: white;
+  text-transform: uppercase;
+}
