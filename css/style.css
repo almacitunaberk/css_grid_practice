@@ -166,7 +166,49 @@ body {
 
 .realtors {
   background-color: #101d2c;
-  grid-column: col-start 7 / full-end; }
+  grid-column: col-start 7 / full-end;
+  padding: 3rem;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  grid-row-gap: 3rem; }
+  .realtors__grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: min-content max-content;
+    align-items: center;
+    grid-row-gap: 5vh;
+    grid-column-gap: 2rem; }
+
+.realtor__heading {
+  grid-column: 1 / -1; }
+
+.realtor__info {
+  justify-self: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.realtor__image {
+  width: 8rem;
+  border-radius: 50%;
+  display: block;
+  justify-self: center; }
+
+.realtor__name {
+  justify-self: start;
+  font-size: 1.6em;
+  color: #f9f7f6;
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif; }
+
+.realtor__score {
+  color: #aaa;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400; }
 
 .features {
   grid-column: center-start / center-end;
